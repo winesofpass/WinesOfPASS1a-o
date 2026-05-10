@@ -617,6 +617,10 @@ form.addEventListener('submit', async (e) => {
     'Celular internacional': intlPhoneSheet,
     'Documento de identidad': documentInput.value.trim(),
     'Beneficio': CONFIG.BENEFIT,
+    beneficio: CONFIG.BENEFIT,
+    benefit: CONFIG.BENEFIT,
+    beneficio_label: CONFIG.BENEFIT,
+    'Tipo de beneficio': CONFIG.BENEFIT,
     'Estado': 'pendiente_alta',
     'Fuente': CONFIG.SOURCE,
     'URL': window.location.href,
@@ -630,7 +634,8 @@ form.addEventListener('submit', async (e) => {
     codigoPais: dialCodeSheet,
     celularInternacional: intlPhoneSheet,
     documento: documentInput.value.trim(),
-    plan: '',
+    plan: CONFIG.BENEFIT,
+    plan_beneficio: CONFIG.BENEFIT,
     posicion_waitlist: '',
     source: CONFIG.SOURCE
   };
